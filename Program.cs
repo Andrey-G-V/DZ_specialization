@@ -51,3 +51,12 @@ void PrintArrey(string[] arrey)
 }
 
 string[] arrey = NewArrey(ScanArray(stringArrey, symbols));
+
+if (arrey.Length == 0)
+{
+    PrintArrey(arrey);
+}
+else
+{
+    PrintArrey(FillArrey(stringArrey, arrey, symbols));
+}
